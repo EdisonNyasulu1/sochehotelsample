@@ -1,0 +1,325 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & NAVBAR REUSE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR BRAND DISPLAY STYLES */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h2 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.logo h2 span {
+    color: #b89445;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b89445;
+}
+
+.auth-buttons .btn-login {
+    margin-right: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.auth-buttons .btn-signup {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn-signup:hover {
+    background-color: #b89445;
+}
+
+/* ==========================================================================
+   2. CONTACT HERO SUBPAGE HEADER
+   ========================================================================== */
+.contact-hero {
+    height: 40vh; /* Shared layout scale matching Services and About Us */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* ==========================================================================
+   3. CONTACT MAIN SPLIT WRAPPER LAYOUT
+   ========================================================================== */
+.contact-section {
+    padding: 80px 8%;
+    background-color: #f9f9f9;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* Triggers elegant vertical restructuring for tablets and phone displays */
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-panel, .contact-form-panel {
+    flex: 1;
+    min-width: 320px; /* Safeguards block panels from crushing narrow width layouts */
+    padding: 50px;
+}
+
+/* ==========================================================================
+   4. LEFT COLUMN: INFO PANEL STYLING
+   ========================================================================== */
+.contact-info-panel {
+    background-color: #2c3e50; /* Primary brand dark slate layout color */
+    color: #ffffff;
+}
+
+.contact-info-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.panel-desc {
+    color: #bcccda;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Layout stacking structure for rows of details channels */
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-item i {
+    font-size: 1.3rem;
+    color: #b89445; /* Luxury Gold detail accents */
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.info-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.info-item p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   5. RIGHT COLUMN: CONTACT INQUIRY FORM STYLING
+   ========================================================================== */
+.contact-form-panel h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Creates side-by-side positioning for Name and Email boxes in wide viewport modes */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Wraps side-by-side elements down to individual line stacks on small mobile dimensions */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+/* Universal text box structural rules for input and textareas */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Block border outline triggers when users select fields to input text string elements */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #b89445;
+    background-color: #ffffff;
+}
+
+/* Inhibits the user from horizontally breaking layout bounds when expanding message fields manually */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* CALL TO ACTION MESSAGE BUTTON SPECIFICATIONS */
+.btn-send {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: #b89445; /* Switches cleanly to luxury gold color on hover trigger states */
+}
+
+/* ==========================================================================
+   6. FOOTER STYLES
+   ========================================================================== */
+.footer-section {
+    background-color: #1a252f;
+    color: #dddddd;
+    padding: 60px 8% 20px 8%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info, .footer-contact, .footer-socials {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-container h3, .footer-container h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-info p, .footer-contact p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.footer-contact i {
+    color: #b89445;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b89445;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #888;
+}

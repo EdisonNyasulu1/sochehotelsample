@@ -1,0 +1,250 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & NAVBAR REUSE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR ALIGNMENT */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h2 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.logo h2 span {
+    color: #b89445;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b89445;
+}
+
+.auth-buttons .btn-login {
+    margin-right: 15px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.auth-buttons .btn-signup {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn-signup:hover {
+    background-color: #b89445;
+}
+
+/* ==========================================================================
+   2. SERVICES SUBPAGE HERO BANNER
+   ========================================================================== */
+.services-hero {
+    height: 40vh; /* Consistent subpage height layout matching about us */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* ==========================================================================
+   3. SERVICES RESPONSIVE GRID LAYOUT
+   ========================================================================== */
+.services-section {
+    padding: 80px 8%;
+    background-color: #f9f9f9;
+}
+
+.services-grid {
+    display: grid;
+    /* Clean grid system that naturally wraps elements based on screen width dimensions */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Individual Content Display Cards */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; /* Stops card graphics from spilling out of smooth border corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Interactive lift effect when hovering over cards */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Rigid image framing box within individual card */
+.service-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Retains raw layout aspect ratios without distorting photos */
+    transition: transform 0.5s ease; /* Prepares a transition rule for zoom scaling */
+}
+
+/* Intuitively zoom image slightly when user hovers over its card */
+.service-card:hover .service-image img {
+    transform: scale(1.08);
+}
+
+/* Lower text body segment within individual cards */
+.service-content {
+    padding: 30px;
+    position: relative; /* Set up coordinate plane context for floating icon element */
+}
+
+/* Floating graphical badge anchor housing specific fonts */
+.service-icon-box {
+    position: absolute;
+    top: -30px; /* Positions the icon precisely halfway up over the image border boundary line */
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #b89445; /* Luxury Gold Badge Color */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(184, 148, 69, 0.3);
+}
+
+.service-content h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.service-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   4. FOOTER DEFINITIONS
+   ========================================================================== */
+.footer-section {
+    background-color: #1a252f;
+    color: #dddddd;
+    padding: 60px 8% 20px 8%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info, .footer-contact, .footer-socials {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-container h3, .footer-container h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-info p, .footer-contact p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.footer-contact i {
+    color: #b89445;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #b89445;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: #888;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Telling the browser this is an HTML5 document -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SOCHE Hotel</title>
+    
+    <!-- Link to Font Awesome for dynamic service icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to the external CSS file dedicated to this page -->
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+    <!-- SECTION 1: HEADER & NAVIGATION (Persistent brand component) -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>SOCHE <span>HOTEL</span></h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#values">Our Values</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 2: SERVICES HERO BANNER -->
+    <section class="services-hero">
+        <div class="hero-text">
+            <h1>World-Class Services</h1>
+            <p>Explore our premium amenities tailored to make your stay extraordinary.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES MAIN GRID DISPLAY -->
+    <section class="services-section">
+        <div class="services-grid">
+            
+            <!-- Service Card 1: Accommodations -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" alt="Luxury Suite Accommodation">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-bed"></i></div>
+                    <h3>Luxury Accommodations</h3>
+                    <p>Immerse yourself in pure comfort. Our elegantly designed rooms and premium suites feature state-of-the-art automation, high-speed connectivity, and scenic city views.</p>
+                </div>
+            </div>
+
+            <!-- Service Card 2: Conference Rooms -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1517502884422-41eaacad0168?auto=format&fit=crop&w=600&q=80" alt="Conference Room Setup">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-laptop-file"></i></div>
+                    <h3>Conference & Corporate Spaces</h3>
+                    <p>Host your executive board meetings, international summits, or corporate retreats in our high-tech conference spaces equipped with advanced audio-visual presentation tech.</p>
+                </div>
+            </div>
+
+            <!-- Service Card 3: Wedding Halls -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80" alt="Elegant Wedding Hall">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-gavel"></i></div>
+                    <h3>Grand Wedding Halls</h3>
+                    <p>Celebrate your love story in our magnificent banquet spaces. From custom lighting arrays to pristine seating arrangements, we craft unforgettable memories for your big day.</p>
+                </div>
+            </div>
+
+            <!-- Service Card 4: Swimming Pools -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80" alt="Infinity Swimming Pool">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-person-swimming"></i></div>
+                    <h3>Infinity Swimming Pools</h3>
+                    <p>Relax and unwind at our signature temperature-controlled infinity pools. Enjoy a clean, family-friendly oasis environment complete with premium poolside sun loungers.</p>
+                </div>
+            </div>
+
+            <!-- Service Card 5: Gourmet Catering -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Gourmet Catering Service">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Gourmet Catering & Dining</h3>
+                    <p>Experience exquisite culinary craftsmanship. Our professional catering staff designs custom menus featuring local delights and international dishes for any event size.</p>
+                </div>
+            </div>
+
+            <!-- Service Card 6: Airport Shuttle (Industry Standard Feature) -->
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="Premium Shuttle Van">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon-box"><i class="fa-solid fa-van-shuttle"></i></div>
+                    <h3>Complimentary Airport Shuttle</h3>
+                    <p>Enjoy stress-free travel. Our professional, punctual transit service provides seamless, secure luxury airport transfers directly to and from the hotel doors.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: FOOTER (Persistent global component) -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>SOCHE HOTEL</h3>
+                <p>Redefining luxury and hospitality standard practices since establishment.</p>
+            </div>
+            
+            <div id="contact" class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Soche Avenue, Blantyre, Malawi</p>
+                <p><i class="fa-solid fa-phone"></i> +265 111 234 567</p>
+                <p><i class="fa-solid fa-envelope"></i> reservations@sochehotel.com</p>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Follow Our Journey</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 SOCHE Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

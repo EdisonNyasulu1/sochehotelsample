@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration tells the browser that this is an HTML5 document. -->
+<html lang="en">
+<head>
+    <!-- Metadata section: Contains info about the page that isn't directly visible to users -->
+    <meta charset="UTF-8">
+    <!-- Ensures the website scales nicely and is responsive on mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCHE Hotel | Luxury & Comfort</title>
+    
+    <!-- Link to Font Awesome for social media icons in the footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Linking our external CSS file to style this structural HTML -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- SECTION 1: HEADER & NAVIGATION -->
+    <!-- The <header> holds the logo and main navigation menu -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>SOCHE <span>HOTEL</span></h2>
+        </div>
+        <nav>
+            <!-- Unordered list for navigation links -->
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#values">Our Values</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Auth buttons separated for distinct styling (e.g., call-to-action buttons) -->
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 2: HERO / LANDING BANNER -->
+    <!-- This is the prominent visual area at the top containing the background photo -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Experience Premium Luxury</h1>
+            <p>Your serene escape in the heart of the city. Enjoy world-class hospitality tailored just for you.</p>
+            <!-- Call to action button to drive user engagement -->
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HOTEL STANDARDS & VALUES -->
+    <!-- A clean, grid-based layout section to showcase the hotel's core values -->
+    <section id="values" class="values-section">
+        <div class="section-title">
+            <h2>Our Standards & Core Values</h2>
+            <p>What makes staying at SOCHE Hotel an unforgettable experience.</p>
+        </div>
+        
+        <div class="values-grid">
+            <!-- Value Card 1 -->
+            <div class="value-card">
+                <i class="fa-solid fa-bell-concierge card-icon"></i>
+                <h3>Excellence in Service</h3>
+                <p>Our 24/7 dedicated staff ensures your comfort is prioritized from check-in to check-out.</p>
+            </div>
+            <!-- Value Card 2 -->
+            <div class="value-card">
+                <i class="fa-solid fa-shield-halved card-icon"></i>
+                <h3>Safety & Privacy</h3>
+                <p>Advanced security systems and strict privacy protocols to give you complete peace of mind.</p>
+            </div>
+            <!-- Value Card 3 -->
+            <div class="value-card">
+                <i class="fa-solid fa-sparkles card-icon"></i>
+                <h3>Uncompromising Cleanliness</h3>
+                <p>A pristine environment maintained to the highest international hygiene and sanitation standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: QUICK FEATURES / AMENITIES (Added industry standard feature) -->
+    <!-- Added this because a hotel site needs to highlight key features immediately to convert visitors -->
+    <section id="services" class="amenities-section">
+        <div class="section-title">
+            <h2>Featured Amenities</h2>
+        </div>
+        <div class="amenities-container">
+            <div class="amenity"><i class="fa-solid fa-wifi"></i> Free High-Speed Wi-Fi</div>
+            <div class="amenity"><i class="fa-solid fa-person-swimming"></i> Infinity Pool</div>
+            <div class="amenity"><i class="fa-solid fa-utensils"></i> Gourmet Restaurant</div>
+            <div class="amenity"><i class="fa-solid fa-dumbbell"></i> Fitness Center</div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FOOTER -->
+    <!-- The footer contains copyright info, contact quick-links, and social media channels -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Footer About Segment -->
+            <div class="footer-info">
+                <h3>SOCHE HOTEL</h3>
+                <p>Redefining luxury and hospitality standard practices since establishment.</p>
+            </div>
+            
+            <!-- Footer Contact Info Segment -->
+            <div id="contact" class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Soche Avenue, Blantyre, Malawi</p>
+                <p><i class="fa-solid fa-phone"></i> +265 111 234 567</p>
+                <p><i class="fa-solid fa-envelope"></i> reservations@sochehotel.com</p>
+            </div>
+            
+            <!-- Footer Social Media Segment -->
+            <div class="footer-socials">
+                <h4>Follow Our Journey</h4>
+                <div class="social-icons">
+                    <!-- Target="_blank" opens the link in a new tab; rel="noopener" is for security -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X (formerly Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom bar for copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 SOCHE Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

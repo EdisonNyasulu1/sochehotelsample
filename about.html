@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Telling the browser this is an HTML5 document -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SOCHE Hotel</title>
+    
+    <!-- Link to Font Awesome for social icons and UI decorations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link to the external CSS file dedicated to this page -->
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- SECTION 1: HEADER & NAVIGATION (Identical to Homepage for consistency) -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>SOCHE <span>HOTEL</span></h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <!-- Pointing these back to index.html since we are on a separate page now -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#values">Our Values</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- SECTION 2: ABOUT HERO BANNER -->
+    <!-- A smaller header banner compared to the home page to introduce the page topic -->
+    <section class="about-hero">
+        <div class="hero-text">
+            <h1>Our Story</h1>
+            <p>Discover the heritage, passion, and people behind SOCHE Hotel.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE STORY SPLIT LAYOUT -->
+    <section class="story-section">
+        <div class="story-container">
+            <!-- Left Side: Written narrative -->
+            <div class="story-content">
+                <span class="sub-title">Established Since 2015</span>
+                <h2>Crafting Unforgettable Moments</h2>
+                <p>Nestled in a vibrant urban landscape, SOCHE Hotel was founded with a single vision: to redefine luxury hospitality by seamlessly blending world-class modern comfort with authentic local warmth.</p>
+                <p>Over the years, we have grown from a boutique sanctuary into an award-winning destination for international travelers and local guests alike. Every room, every meal, and every interaction is designed to make you feel completely at home.</p>
+            </div>
+            <!-- Right Side: Showcasing a premium interior photo -->
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="SOCHE Hotel Luxury Lounge">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: LEADERSHIP TEAM -->
+    <!-- Introduces grid structures and image handling cards to the student -->
+    <section class="team-section">
+        <div class="section-title">
+            <h2>Our Leadership Team</h2>
+            <p>The visionaries behind our seamless hospitality operations.</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80" alt="CEO">
+                </div>
+                <h3>Blessings Speke</h3>
+                <span class="role">Founder & CEO</span>
+                <p>With over two decades in luxury hotel management, Speke drives the vision and standard of excellence at SOCHE.</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400&q=80" alt="Operations Director">
+                </div>
+                <h3>Virginia Chikuni</h3>
+                <span class="role">Director of Operations</span>
+                <p>Virginia oversees day-to-day guest experiences, ensuring our values are reflected in every single department.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FOOTER (Identical structure to index.html for visual harmony) -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>SOCHE HOTEL</h3>
+                <p>Redefining luxury and hospitality standard practices since establishment.</p>
+            </div>
+            
+            <div id="contact" class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Soche Avenue, Blantyre, Malawi</p>
+                <p><i class="fa-solid fa-phone"></i> +265 111 234 567</p>
+                <p><i class="fa-solid fa-envelope"></i> reservations@sochehotel.com</p>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Follow Our Journey</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 SOCHE Hotel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
